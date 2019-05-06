@@ -1,0 +1,52 @@
+$theme-color: #0078d7;
+$theme-background-color: #FFFFFF;
+$text-color:#5c6b7e;
+
+/*Toast colors*/
+
+$toast-color: #f9edbe;
+$toast-success-color: #26C281;
+$toast-error-color: #bd362f;
+$toast-info-color: #3598DC;
+$toast-wait-color: #9480e0;
+$toast-warning-color: #f89406;
+
+/*common colors*/
+
+$gray-color: #555555;
+$gray-color-1: #90949c;
+$light-gray-color: #CCCCCC;
+$white-color: #ffffff;
+$black-color: #000000;
+$red-color: #fa3e3e;
+
+/*Font*/
+
+$font-size-small-1: 10px;
+$font-size-small-2: 12px;
+$font-size-medium: 13px;
+$font-size-large-1: 20px;
+$font-size-large-2: 50px;
+$font-size-large-3: 100px;
+
+/*Font Family*/
+
+$app-font-family: 'LatoRegular', sans-serif;
+
+/*----- SPACE variable-----*/
+$xxs : 5px;
+$xs : 10px;
+$small : 25px;
+$medium : 50px;
+$large : 75px;
+$xlarge : 100px;
+$xxlarge: 150px;
+
+/*----- Modal Size (width) variable-----*/
+$modal-small : 400px;
+$modal-xsmall : 500px;
+$modal-medium : 576px;
+$modal-xmedium : 700px;
+$modal-xlarge : 800px;
+$modal-xxlarge : 990px;
+$modal-auto : auto;
