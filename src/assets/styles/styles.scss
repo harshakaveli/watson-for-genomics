@@ -7,10 +7,25 @@
   'abstracts/placeholders';
 
 @import
+  'base/reset',
   'base/typography';
 
-body {
-    font-family: $app-font-family;
-    background-color: $theme-background-color;
-}
+@import
+  'layout/forms';
 
+@import
+  'components/button',
+  'components/input';
+
+@import
+  'themes/scroll';
+
+
+body {
+  font-family: $app-font-family;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(28, 48, 62);
+  overflow: hidden;
+  color: white;
+}

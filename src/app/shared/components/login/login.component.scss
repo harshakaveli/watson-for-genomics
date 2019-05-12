@@ -1,0 +1,148 @@
+  
+  .btn {
+    display: inline-block;
+    width: auto;
+    font: 1vw/1.2vw 'Lato', sans-serif;
+    padding: 0.4vw 0.8vw;
+    background: #d5d5d5;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    &:hover {
+      color: #fff;
+      background: #2d8cba;
+    }
+    &:focus {
+      color: #fff;
+      background: #2d8cba;
+      &:active {
+        color: #fff;
+        background: #2d8cba;
+      }
+    }
+  }
+  
+  .btn-save {
+    &:hover {
+      color: #fff;
+      background: #2d8cba;
+    }
+    &:focus {
+      color: #fff;
+      background: #2d8cba;
+      &:active {
+        color: #fff;
+        background: #2d8cba;
+      }
+    }
+    display: inline-block;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: #fff;
+    text-transform: uppercase;
+    background: #0041ff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 0 1.5vw;
+  }
+  
+  .form-control {
+    padding: 0 1vw;
+    font-size: 1vw;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: transparent;
+    padding: 1% 2%;
+    width: 96%;
+    display: inline-block;
+    border-radius: 3px;
+    &:focus {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      background-color: transparent;
+    }
+  }
+  
+  .login-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 26vw;
+    height: 30vw;
+    h1 {
+      font-size: 1.5vw;
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+  
+  .banner-copyrights p a {
+    color: #138ccc;
+    &:hover {
+      color: #2db8ba;
+    }
+  }
+  
+  .login-form {
+    .form-control {
+      color: #666;
+      background-color: #fff;
+      font-weight: 700;
+      line-height: 1.5vw;
+    }
+    .control-div {
+      margin-bottom: 1vw;
+    }
+  }
+  
+  .control-div label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0.5vw;
+  }
+  
+  .login-button p {
+    color: #fff;
+    font-size: 1vw;
+    font-weight: normal;
+    line-height: 1vw;
+    span {
+      color: #7295ad;
+      font-size: 1vw;
+      font-weight: normal;
+      line-height: 1.5vw;
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .forgot-pwd {
+    color: #7295ad;
+    font-size: 1vw;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .btn-cls {
+    background-color: #3b6f94;
+    border: 1px solid #3b6f94;
+    color: white;
+    border-radius: 20px;
+    padding: 1% 4%;
+    cursor: pointer;
+    margin: 0.5vw 0;
+  }
+  
+  .login-description p {
+    width: 100%;
+    margin: 0.2vw 0;
+    padding: 0;
+    font-size: 1vw;
+    line-height: 1.5vw;
+  }

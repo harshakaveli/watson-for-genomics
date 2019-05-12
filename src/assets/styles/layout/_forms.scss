@@ -1,0 +1,19 @@
+.form-control {
+    font-family: $app-font-family;
+    @include font-size ($font-size-small-2)
+}
+
+input[type="file"] {
+    display: none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    @include space(margin, all, 0px);
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,9 @@
+{	
+	"textNotification" : {
+		"enable" : true,
+		"url" : "https://api.twilio.com/2010-04-01/Accounts/AC34bb5786912117ce56523ae604ce8f5f/Messages.json",
+		"sid" : "AC34bb5786912117ce56523ae604ce8f5f",
+		"authToken" : "aef613148c40eaa8dca217c1cea61781",
+		"fromNumber" : "+18032237586"
+	}
+}

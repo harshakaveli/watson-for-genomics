@@ -53,26 +53,36 @@
     }
 }
 
-@mixin calc($property, $expression) {
-    #{$property}: -moz-calc(#{$expression});
-    #{$property}: -webkit-calc(#{$expression});
-    #{$property}: calc(#{$expression});
+@mixin overflow-ellipsis() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin bubble-style($color) {
+    background-color: $color;
+    border-color: darken($color, $darken-amount);
+    &:before,
+    &:after {
+        background-color: $color;
+        border-color: darken($color, $darken-amount);
+    }
 }
 
 //Padding mixin
-@mixin padding($top: false, $right: false, $bottom: false, $left: false) {
-    @if $top { padding-top: $top; }
-    @if $right { padding-right: $right; }
-    @if $bottom { padding-bottom: $bottom; }
-    @if $left { padding-left: $left; }
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
 }
 
 //Margin mixin
-@mixin margin($top: false, $right: false, $bottom: false, $left: false) {
-    @if $top { margin-top: $top; }
-    @if $right { margin-right: $right; }
-    @if $bottom { margin-bottom: $bottom; }
-    @if $left { margin-left: $left; }
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
 }
 
 @mixin space($type:margin, $direction:all, $amount:$medium) {
@@ -113,17 +123,11 @@
 }
 
 
-@mixin font-size($size: false, $color: false, $weight: false,  $lh: false) {
-    @if $size { 
-        font-size: $size;
-        font-size: calculateRem($size);
-    }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
 }
 
- 
 @mixin pseudo($pos: false, $top: false, $right: false,  $left: false,  $bottom: false, $z-indexes:false) {
     @if $pos { position: $pos; }
     @if $top { top: $top; }
@@ -132,21 +136,6 @@
     @if $bottom { bottom: $bottom; }
     @if $z-indexes { z-index: $z-indexes; }
 }
-
-@mixin img-replace($image, $width, $height, $position: center, $repeat: no-repeat) {
-    background: url($image) $repeat $position;    
-    background-size: $width $height;
-}
-
-@mixin word-wrap() {
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-}
-
 @mixin firefox-browser-style() {
     @at-root {
         @supports (-moz-appearance:none) {
@@ -161,12 +150,4 @@
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { // IE 10+
         @content;
     }
-}
-
-@mixin ellipsis ($max-width: false){
-    display: inline-block;
-    @if $max-width { max-width: $max-width }
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
