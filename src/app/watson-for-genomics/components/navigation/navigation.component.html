@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-sm">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">WGA Cloud Services Team</a>
+  <div class="logo-head">
+    IBM Watson for Genomics
+  </div>
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Patient Cases
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Patient Cases</a>
+        <a class="dropdown-item" href="#">Shared Cases</a>
+        <a class="dropdown-item" href="#">Report Review</a>
+        <a class="dropdown-item" href="#">Administration</a>
+        <a class="dropdown-item" href="#">Support Services</a>
+        <a class="dropdown-item" href="#">Usage Reports</a>
+        <a class="dropdown-item" href="#">Insights Dashboard</a>
+        <a class="dropdown-item" href="#">Level of evidence Dashboard</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">About</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+        Harshakaveli
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Change passowrd</a>
+        <a class="dropdown-item" href="#">Sign out</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div class="row">
+  <div class="col-sm-3 col-md-3">
+    <div class="list-group">
+      <a [routerLink]="['/cases']" class="list-group-item">
+        <i class="fa fa-comment-o"></i> Cases
+      </a>
+      <a [routerLink]="['/samples']" class="list-group-item">
+        <i class="fa fa-search"></i> Samples
+      </a>
+      <a [routerLink]="['/reports']" class="list-group-item">
+        <i class="fa fa-user"></i> Reports
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-9 col-md-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>

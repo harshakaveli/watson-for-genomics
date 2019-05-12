@@ -1,0 +1,9 @@
+%icon {
+    font-family: $glyphicons-font;
+    font-style: normal;
+    font-weight: 400;
+    width: 35px;
+    height: 100%;
+    display: inline-block;
+    @include pseudo(absolute, 12px, false, 0.0em, false, false);
+}
