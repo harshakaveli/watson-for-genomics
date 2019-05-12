@@ -1,56 +1,61 @@
-<nav class="navbar navbar-expand-sm">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">WGA Cloud Services Team</a>
-  <div class="logo-head">
-    IBM Watson for Genomics
-  </div>
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Patient Cases
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Patient Cases</a>
-        <a class="dropdown-item" href="#">Shared Cases</a>
-        <a class="dropdown-item" href="#">Report Review</a>
-        <a class="dropdown-item" href="#">Administration</a>
-        <a class="dropdown-item" href="#">Support Services</a>
-        <a class="dropdown-item" href="#">Usage Reports</a>
-        <a class="dropdown-item" href="#">Insights Dashboard</a>
-        <a class="dropdown-item" href="#">Level of evidence Dashboard</a>
-      </div>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">About</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
-        Harshakaveli
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Change passowrd</a>
-        <a class="dropdown-item" href="#">Sign out</a>
-      </div>
-    </li>
-  </ul>
-</nav>
-<div class="row">
-  <div class="col-sm-3 col-md-3">
-    <div class="list-group">
-      <a [routerLink]="['/cases']" class="list-group-item">
-        <i class="fa fa-comment-o"></i> Cases
-      </a>
-      <a [routerLink]="['/samples']" class="list-group-item">
-        <i class="fa fa-search"></i> Samples
-      </a>
-      <a [routerLink]="['/reports']" class="list-group-item">
-        <i class="fa fa-user"></i> Reports
-      </a>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="col-sm-12 navbar-menu">
+        <!-- Brand -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">WGA Cloud Services Team</a>
+        </div>
+        <div class="logo-head">
+            IBM Watson for Genomics
+        </div>
+        <!-- Links -->
+        <ul class="nav navbar-nav pull-right navbar-list">
+            <!-- Dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                     Patient Cases <span class="caret"></span>
+               
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="" href="#">Patient Cases</a></li>
+                    <li><a class="" href="#">Shared Cases</a></li>
+                    <li><a class="" href="#">Report Review</a></li>
+                    <li><a class="" href="#">Administration</a></li>
+                    <li><a class="" href="#">Support Services</a></li>
+                    <li><a class="" href="#">Usage Reports</a></li>
+                    <li><a class="" href="#">Insights Dashboard</a></li>
+                    <li><a class="" href="#">Level of evidence Dashboard</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">About <span class="caret"></span></a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                    Harshakaveli <span class="caret"></span> 
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="" href="#">Change passowrd</a></li>
+                    <li><a class="" href="#">Sign out</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-  </div>
-  <div class="col-sm-9 col-md-9">
-    <router-outlet></router-outlet>
-  </div>
+</nav>
+<div class="row wrapper">
+    <div class="col-sm-1 col-md-1 tab-button">
+        <div class="list-group">
+            <a [routerLink]="['/cases']" class="list-group-item text-center">
+                <i class="glyphicon glyphicon-book col-sm-12 text-center"></i> Cases
+            </a>
+            <a [routerLink]="['/samples']" class="list-group-item text-center">
+                <i class="glyphicon glyphicon-search col-sm-12 text-center"></i> Samples
+            </a>
+            <a [routerLink]="['/reports']" class="list-group-item text-center">
+                <i class="glyphicon glyphicon-user col-sm-12 text-center"></i> Reports
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-11 col-md-11 tab-content">
+        <router-outlet></router-outlet>
+    </div>
 </div>
