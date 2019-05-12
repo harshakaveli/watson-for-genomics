@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CasesComponent } from './components/cases/cases.component';
+import { SamplesComponent } from './components/samples/samples.component';
+import { ReportsComponent } from './components/reports/reports.component';
 
 const watsonForGenomicsRoutes: Routes = [
   {
@@ -10,7 +12,27 @@ const watsonForGenomicsRoutes: Routes = [
     children: [
       {
         path: '',
-        component: DashboardComponent
+        component: CasesComponent
+      }
+    ]
+  },
+  {
+    path: 'samples',
+    component: NavigationComponent,
+    children: [
+      {
+        path: '',
+        component: SamplesComponent
+      }
+    ]
+  },
+  {
+    path: 'reports',
+    component: NavigationComponent,
+    children: [
+      {
+        path: '',
+        component: ReportsComponent
       }
     ]
   }
