@@ -1,24 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholders';
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins", "abstracts/placeholders";
 
-@import
-  'base/reset',
-  'base/typography';
+@import "base/reset", "base/typography";
 
-@import
-  'layout/forms';
+@import "layout/forms";
 
-@import
-  'components/button',
-  'components/input';
+@import "components/button", "components/input";
 
-@import
-  'themes/scroll';
+@import "themes/scroll";
 
 
 body {
