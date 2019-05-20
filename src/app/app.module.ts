@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { WatsonForGenomicModule } from './watson-for-genomics/watson-for-genomics-app.module';
-
+import { ButtonModule } from "carbon-components-angular";
 @NgModule({
     declarations: [
         AppComponent
@@ -16,7 +16,8 @@ import { WatsonForGenomicModule } from './watson-for-genomics/watson-for-genomic
         AppRoutingModule,
         SharedModule,
         BrowserAnimationsModule,
-        WatsonForGenomicModule
+        WatsonForGenomicModule,
+        ButtonModule
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy }

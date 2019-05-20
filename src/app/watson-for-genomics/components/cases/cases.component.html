@@ -1,3 +1,20 @@
-<p>
-  cases works!
-</p>
+<div #container class="container carbon--theme--white">
+	<div class="demo-content" ibmGrid>
+		<div ibmRow>
+			<div ibmCol [columnNumbers]="{'lg':6, 'md':12, 'sm': 12}">
+				<div style="text-align:center">
+          <h1>Welcome to Carbon Components Angular!!</h1>
+          <button ibmButton>Hi!</button>
+        </div>
+			</div>
+			<div ibmCol [columnNumbers]="{'lg':6, 'md':12, 'sm': 12}">
+				<ibm-radio-group style="position: absolute; right: 0">
+					<ibm-radio checked="true" (change)="onWhiteChange()">white</ibm-radio>
+					<ibm-radio (change)="onG10Change()">g10</ibm-radio>
+					<ibm-radio (change)="onG90Change()">g90</ibm-radio>
+					<ibm-radio (change)="onG100Change()">g100</ibm-radio>
+				</ibm-radio-group>
+			</div>
+		</div>
+	</div>
+</div>
